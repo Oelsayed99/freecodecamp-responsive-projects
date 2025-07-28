@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #0a0a23;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+}
+
+#years {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  background-color: #0a0a23;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.tables {
+  display: grid;
+  gap: 2rem;
+}
+
+.table-block h2 {
+  color: #356eaf;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+thead {
+  background: #f0f0f0;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+}
+
+.total {
+  font-weight: bold;
+  background-color: #e8f4ff;
+}
+
+@media (max-width: 600px) {
+  #years {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    font-size: 0.9rem;
+  }
+}
