@@ -1,0 +1,123 @@
+/* Base Reset & Layout */
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Headings & Paragraphs */
+h1, p {
+  margin: 1em auto 0.5em;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Form Container */
+form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #2a2a40;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Fieldsets */
+fieldset {
+  border: none;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #444;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+  font-size: 0.95rem;
+}
+
+/* Inputs, Textareas, Select */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  background-color: #0a0a23;
+  color: #ffffff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 2px #6c63ff44;
+  outline: none;
+}
+
+/* Inline Radio & Checkbox */
+.inline {
+  width: unset;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #6c63ff;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #5848e5;
+}
+
+/* File Input Style */
+input[type="file"] {
+  padding: 5px 6px;
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #ccc;
+}
+
+/* Link Styling */
+a {
+  color: #9ecbff;
+  text-decoration: underline;
+}
+
+/* Responsive Textarea */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}

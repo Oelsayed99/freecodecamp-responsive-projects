@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background-image: url("https://th.bing.com/th/id/OIP.06GwpsnnY3St00U0RI0fnQAAAA?rs=1&pid=ImgDetMain");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+main {
+  margin: 5vh auto;
+  max-width: 600px;
+  background-color: #ffffffdd;
+  border-radius: 8px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.form-part {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  max-width: 100%;
+}
+
+/* Label styles */
+.form-part > label,
+.form-part > p {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Input, select, textarea fill full width */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style checkboxes and radios and their labels in a flex row */
+.form-part > label input[type="checkbox"],
+.form-part > label input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.1);
+  vertical-align: middle;
+}
+
+/* Group checkbox/radio labels inside a container for consistent width */
+.form-part div.checkbox-group,
+.form-part div.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 100%;
+}
+
+.form-part div.checkbox-group label,
+.form-part div.radio-group label {
+  flex: 1 1 45%; 
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  color: #333;
+}
+
+.form-part div.radio-group label {
+  flex: 1 1 100%; 
+}
+
+/* Button */
+button#submit {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button#submit:hover {
+  background-color: #21618c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 25px 20px;
+  }
+  .form-part div.checkbox-group label,
+  .form-part div.radio-group label {
+    flex: 1 1 100%;
+  }
+}

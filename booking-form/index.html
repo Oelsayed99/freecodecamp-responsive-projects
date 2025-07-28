@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Motors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Dr. Motors</h1>
+      <p id="description">Book your car routine service easily</p>
+      <form id="survey-form">
+        <div class="form-part">
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your full name"
+            />
+          </label>
+        </div>
+        <div class="form-part">
+          <label for="email" id="email-label"
+            >Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Your email"
+            />
+          </label>
+        </div>
+        <div class="form-part">
+          <label for="number" id="number-label"
+            >Phone:
+            <input
+              type="tel"
+              id="number"
+              name="number"
+              maxlength="15"
+              placeholder="Your phone number"
+            />
+          </label>
+        </div>
+        <div class="form-part">
+          <label for="dropdown">Are you a new customer?</label>
+          <select id="dropdown" name="new-customer" required>
+            <option disabled selected value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <!-- For the radio buttons: -->
+        <div class="form-part">
+          <p>Where did you hear about us?</p>
+          <div class="radio-group">
+            <label
+              ><input name="know-aboutus" value="facebook" type="radio" />
+              Facebook</label
+            >
+            <label
+              ><input name="know-aboutus" value="x" type="radio" /> X
+              (Twitter)</label
+            >
+            <label
+              ><input name="know-aboutus" value="website" type="radio" /> Our
+              Website</label
+            >
+            <label
+              ><input name="know-aboutus" value="friend" type="radio" /> Friend
+              or Family</label
+            >
+          </div>
+        </div>
+        <!-- For the checkboxes: -->
+        <div class="form-part">
+          <p>What services would you like to book?</p>
+          <div class="checkbox-group">
+            <p>What services would you like to book?</p>
+            <label
+              ><input name="services" value="maintenance" type="checkbox" />
+              Maintenance Services</label
+            >
+            <label
+              ><input name="services" value="repair" type="checkbox" />
+              Diagnostic & Repair</label
+            >
+            <label
+              ><input name="services" value="tires" type="checkbox" /> Tire &
+              Wheel Services</label
+            >
+            <label
+              ><input name="services" value="brake" type="checkbox" /> Brake &
+              Safety Services</label
+            >
+            <label
+              ><input name="services" value="conditioning" type="checkbox" /> AC
+              & Heating Services</label
+            >
+            <label
+              ><input name="services" value="bodyglass" type="checkbox" /> Body
+              & Glass</label
+            >
+            <label
+              ><input name="services" value="tuning" type="checkbox" />
+              Diagnostics & Tuning</label
+            >
+            <label
+              ><input name="services" value="cleaning" type="checkbox" />
+              Detailing & Cleaning</label
+            >
+            <label
+              ><input name="services" value="customization" type="checkbox" />
+              Customization</label
+            >
+            <label
+              ><input name="services" value="specialty" type="checkbox" />
+              Specialty Services</label
+            >
+            <label
+              ><input name="services" value="misc" type="checkbox" />
+              Miscellaneous</label
+            >
+          </div>
+        </div>
+        <div class="form-part">
+          <label for="comments">Comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            rows="4"
+            placeholder="Leave your comments here..."
+          ></textarea>
+        </div>
+        <div class="form-part">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
