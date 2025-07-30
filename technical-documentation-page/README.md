@@ -1,25 +1,37 @@
-# 📱 CSS Responsive Tutorial
+# 🏎️ Tribute Page – Koenigsegg Gemera
 
-This is a simple, responsive educational webpage built with HTML and CSS. It covers core CSS responsiveness concepts like:
+This is a responsive web project built as part of the **FreeCodeCamp Responsive Web Design Certification**. It's a tribute to the Koenigsegg Gemera – the world’s first Mega-GT and the first four-seater from Koenigsegg.
 
-- 📏 Viewport configuration
-- 🧱 Grid view layouts
-- 🎯 Media queries and breakpoints
-- 📐 Adaptive layout strategies
+## 🚀 Live Demo
+You can view the live project [here](#) *(add your GitHub Pages link if deployed)*
 
-## 💡 Features
+## 📁 Project Structure
+- `index.html`: Main HTML structure of the tribute page
+- `styles.css`: Custom styles for layout and design
 
-- Modern and clean UI
-- Fully responsive for desktop, tablet, and mobile
-- Interactive examples using `<code>` blocks
-- Fixed sidebar for navigation
+## 📱 Features
+- Clean, modern responsive layout
+- Semantic HTML structure
+- Accessible and keyboard-friendly
+- Includes external image and external link
 
-## 🚀 Getting Started
+## 🛠️ Technologies Used
+- HTML5
+- CSS3 (Vanilla, no frameworks)
 
-1. Clone the repo
-2. Open `index.html` in your browser
-3. Resize your window to see responsiveness in action
+## 🎯 Objective
+This project is part of the **FreeCodeCamp curriculum**, designed to practice:
+- Basic HTML & CSS
+- Responsiveness
+- Visual hierarchy
+- Semantic elements
+
+## 📸 Screenshot
+*(Optional: Add a screenshot here)*
+
+## ✅ Certification Requirement
+This project fulfills one of the [FreeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/responsive-web-design/) projects.
 
 ---
 
-Feel free to customize or expand on it for your own projects!
+> Designed and coded with ❤️ by Omar

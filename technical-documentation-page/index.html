@@ -2,85 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Responsive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koenigsegg Gemera Tribute Page</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav id="navbar">
-    <header>CSS Responsive</header>
-    <a href="#What_is_The_Viewport?" class="nav-link">What is The Viewport?</a>
-    <a href="#What_is_a_Grid_View?" class="nav-link">What is a Grid View?</a>
-    <a href="#What_is_a_Media_Query?" class="nav-link">What is a Media Query?</a>
-    <a href="#Add_a_Breakpoint" class="nav-link">Add a Breakpoint</a>
-    <a href="#Another_Breakpoint" class="nav-link">Another Breakpoint</a>
-  </nav>
-
-  <main id="main-doc">
-    <section class="main-section" id="What_is_The_Viewport?">
-      <header>What is The Viewport?</header>
-      <p>The viewport is the user's visible area of a web page.</p>
-      <p>The viewport varies with the device and will be smaller on a mobile phone than on a computer screen.</p>
-      <p>Before tablets and mobile phones, web pages were designed only for computer screens.</p>
-      <h3>Setting The Viewport</h3>
-      <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</code>
-    </section>
-
-    <section class="main-section" id="What_is_a_Grid_View?">
-      <header>What is a Grid View?</header>
-      <p>Many web pages are based on a grid-view, which means that the page is divided into rows and columns.</p>
-      <h3>Building a Grid View</h3>
-      <code>
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-      </code>
-    </section>
-
-    <section class="main-section" id="What_is_a_Media_Query?">
-      <header>What is a Media Query?</header>
-      <p>Media query is a CSS technique introduced in CSS3.</p>
-      <h3>Example</h3>
-      <code>
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-      </code>
+  <main id="main">
+    <h1 id="title">Koenigsegg Gemera</h1>
+    <p class="subtitle">A tribute to the world's first Mega-GT</p>
+    
+    <div id="img-div">
+      <img id="image" src="https://www.thedrive.com/uploads/2023/07/08/gemera-hero-scaled-e1688834477269.jpeg?auto=webp&crop=16:9&auto=webp&optimize=high&quality=70&width=1440" alt="Koenigsegg Gemera front view" />
+      <figcaption id="img-caption">The Koenigsegg Gemera is the world's first Mega-GT and Koenigsegg's first four-seater car.</figcaption>
+    </div>
+    
+    <section id="tribute-info">
+      <h3>Overview</h3>
+      <p>The Gemera merges the thrill of a two-seater megacar with the practicality of a four-seater, offering room for passengers and luggage. It brings the full Koenigsegg experience to families and friends alike.</p>
+      
+      <h3>Highlights</h3>
       <ul>
-        <li>Adapts layout based on screen size</li>
-        <li>Makes sites mobile-friendly</li>
-        <li>Often uses breakpoints (in px, %, or em)</li>
+        <li>0–100 km/h in 1.9 seconds</li>
+        <li>1700 horsepower</li>
+        <li>Hybrid system with 3 electric motors and a twin-turbo engine</li>
+        <li>Range: 1000 km (hybrid combined)</li>
+        <li>Advanced safety and infotainment features</li>
       </ul>
-    </section>
-
-    <section class="main-section" id="Add_a_Breakpoint">
-      <header>Add a Breakpoint</header>
-      <p>Media queries can change layout at certain screen widths (called breakpoints).</p>
-      <h3>Example</h3>
-      <code>
-@media only screen and (max-width: 600px) {
-  .item1 {grid-area: 1 / span 6;}
-  .item2 {grid-area: 2 / span 6;}
-}
-      </code>
-    </section>
-
-    <section class="main-section" id="Another_Breakpoint">
-      <header>Another Breakpoint</header>
-      <p>You can define multiple breakpoints for better flexibility.</p>
-      <h3>Example</h3>
-      <code>
-@media only screen and (min-width: 600px) {
-  .item2 {grid-area: 2 / span 1;}
-}
-
-@media only screen and (min-width: 768px) {
-  .item4 {grid-area: 2 / span 1;}
-}
-      </code>
+      
+      <p>To learn more, visit the <a id="tribute-link" href="https://www.koenigsegg.com/gemera" target="_blank">official Gemera page</a>.</p>
     </section>
   </main>
 </body>
